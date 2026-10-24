@@ -1,0 +1,22 @@
+# Deep Learning & Numerical Computing
+tensorflow>=2.16.1
+numpy>=1.26.0,<2.0.0
+
+# Image Processing & Visualization
+Pillow>=10.2.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Machine Learning & Metrics
+scikit-learn>=1.4.0
+
+# Web Application
+streamlit>=1.32.0
+
+# Configuration, Utilities & Networking
+pyyaml>=6.0.1
+requests>=2.31.0
+tqdm>=4.66.0
+
+# Quality Assurance & Testing
+pytest>=8.0.0

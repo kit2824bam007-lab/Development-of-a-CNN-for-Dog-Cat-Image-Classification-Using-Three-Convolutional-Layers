@@ -1,0 +1,80 @@
+# ==============================================================================
+# Configuration for Dog-Cat CNN Image Classification System
+# ==============================================================================
+
+project:
+  name: "Dog-Cat CNN Image Classification"
+  version: "1.0.0"
+  random_seed: 42
+
+dataset:
+  # Official Microsoft Cats and Dogs download source
+  url: "https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip"
+  archive_filename: "kagglecatsanddogs_5340.zip"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  manifest_dir: "data/manifests"
+  
+  # Data Split Ratios (Strict Stratified Isolation)
+  splits:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+
+image:
+  height: 128
+  width: 128
+  channels: 3
+  normalization_scale: 0.00392156862  # 1.0 / 255.0
+  classes:
+    - name: "Cat"
+      index: 0
+    - name: "Dog"
+      index: 1
+
+model:
+  name: "ThreeLayerCNN"
+  input_shape: [128, 128, 3]
+  # Architectural specifications: exactly 3 Conv2D layers
+  conv_layers:
+    - filters: 32
+      kernel_size: [3, 3]
+      activation: "relu"
+      padding: "same"
+      pool_size: [2, 2]
+    - filters: 64
+      kernel_size: [3, 3]
+      activation: "relu"
+      padding: "same"
+      pool_size: [2, 2]
+    - filters: 128
+      kernel_size: [3, 3]
+      activation: "relu"
+      padding: "same"
+      pool_size: [2, 2]
+  dense_units: 128
+  dropout_rate: 0.5
+  output_units: 1
+  output_activation: "sigmoid"
+
+training:
+  batch_size: 32
+  epochs: 20
+  learning_rate: 0.001
+  early_stopping:
+    monitor: "val_loss"
+    patience: 5
+    restore_best_weights: true
+  reduce_lr:
+    monitor: "val_loss"
+    factor: 0.5
+    patience: 3
+    min_lr: 0.00001
+
+paths:
+  artifacts_dir: "artifacts"
+  reports_dir: "reports"
+  model_checkpoint: "artifacts/best_model.keras"
+  training_history: "reports/training_history.json"
+  eval_metrics: "reports/evaluation_metrics.json"
+  data_report: "reports/data_preparation_report.json"

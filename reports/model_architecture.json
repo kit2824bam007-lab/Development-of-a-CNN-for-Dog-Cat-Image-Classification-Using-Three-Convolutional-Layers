@@ -1,0 +1,106 @@
+{
+  "model_name": "DogCat_3Layer_CNN",
+  "input_shape": [
+    null,
+    128,
+    128,
+    3
+  ],
+  "output_shape": [
+    null,
+    1
+  ],
+  "total_parameters": 4287809,
+  "trainable_parameters": 4287809,
+  "non_trainable_parameters": 0,
+  "conv2d_layer_count": 3,
+  "conv2d_layers": [
+    {
+      "name": "conv2d_1",
+      "filters": 32,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "activation": "relu",
+      "padding": "same"
+    },
+    {
+      "name": "conv2d_2",
+      "filters": 64,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "activation": "relu",
+      "padding": "same"
+    },
+    {
+      "name": "conv2d_3",
+      "filters": 128,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "activation": "relu",
+      "padding": "same"
+    }
+  ],
+  "all_layers": [
+    {
+      "name": "input_image",
+      "type": "InputLayer",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "conv2d_1",
+      "type": "Conv2D",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "maxpool_1",
+      "type": "MaxPooling2D",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "conv2d_2",
+      "type": "Conv2D",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "maxpool_2",
+      "type": "MaxPooling2D",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "conv2d_3",
+      "type": "Conv2D",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "maxpool_3",
+      "type": "MaxPooling2D",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "flatten",
+      "type": "Flatten",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "dense_1",
+      "type": "Dense",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "dropout",
+      "type": "Dropout",
+      "output_shape": "unknown"
+    },
+    {
+      "name": "output_dense",
+      "type": "Dense",
+      "output_shape": "unknown"
+    }
+  ]
+}

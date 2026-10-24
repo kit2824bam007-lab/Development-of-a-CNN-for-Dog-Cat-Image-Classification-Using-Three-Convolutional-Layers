@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Datasets and large image files
+data/raw/
+data/processed/
+data/*.zip
+*.zip
+PetImages/
+
+# Model checkpoints and weights (keep directory structure via .gitkeep)
+artifacts/*.keras
+artifacts/*.h5
+models/*.keras
+models/*.h5
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & temporary files
+*.log
+scratch/
+tmp/

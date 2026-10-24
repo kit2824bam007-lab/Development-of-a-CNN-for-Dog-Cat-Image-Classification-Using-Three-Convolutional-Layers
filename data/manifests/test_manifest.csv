@@ -1,0 +1,9 @@
+image_path,label,class_name,split
+C:/Users/hp/cat%dog prediction cnn/data/processed/Dog/Dog_22.jpg,1,Dog,test
+C:/Users/hp/cat%dog prediction cnn/data/processed/Cat/Cat_21.jpg,0,Cat,test
+C:/Users/hp/cat%dog prediction cnn/data/processed/Cat/Cat_7.jpg,0,Cat,test
+C:/Users/hp/cat%dog prediction cnn/data/processed/Dog/Dog_23.jpg,1,Dog,test
+C:/Users/hp/cat%dog prediction cnn/data/processed/Cat/Cat_5.jpg,0,Cat,test
+C:/Users/hp/cat%dog prediction cnn/data/processed/Dog/Dog_17.jpg,1,Dog,test
+C:/Users/hp/cat%dog prediction cnn/data/processed/Cat/Cat_3.jpg,0,Cat,test
+C:/Users/hp/cat%dog prediction cnn/data/processed/Dog/Dog_9.jpg,1,Dog,test
