@@ -4,41 +4,48 @@ __pycache__/
 *$py.class
 *.so
 
-# Environments
+# Python & Virtual Environments
 .env
 .venv
 env/
 venv/
 ENV/
-env.bak/
-venv.bak/
 
-# Datasets and large image files
-data/raw/
-data/processed/
-data/*.zip
-*.zip
+# Datasets and large data caches
+data/
+downloads/
+tensorflow_datasets/
 PetImages/
+*.zip
+*.tar.gz
 
-# Model checkpoints and weights (keep directory structure via .gitkeep)
-artifacts/*.keras
-artifacts/*.h5
-models/*.keras
-models/*.h5
+# Model weights and serialized checkpoints
+*.keras
+*.h5
+*.ckpt
+saved_model/
+artifacts/
 
-# OS / Editor files
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Private local notes & viva guides (Do not push to GitHub)
+VIVA_AND_REVIEWER_PREPARATION.md
+*viva*
+*prep*
+
+# OS & Editor files
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 *.swp
 
-# Testing & Coverage
+# Testing & Logs
 .pytest_cache/
 .coverage
 htmlcov/
-
-# Logs & temporary files
 *.log
 scratch/
 tmp/

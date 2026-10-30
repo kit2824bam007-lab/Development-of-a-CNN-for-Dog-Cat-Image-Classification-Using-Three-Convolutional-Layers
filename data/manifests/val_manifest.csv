@@ -1,8 +1,0 @@
-image_path,label,class_name,split
-C:/Users/hp/cat%dog prediction cnn/data/processed/Dog/Dog_21.jpg,1,Dog,val
-C:/Users/hp/cat%dog prediction cnn/data/processed/Dog/Dog_6.jpg,1,Dog,val
-C:/Users/hp/cat%dog prediction cnn/data/processed/Cat/Cat_18.jpg,0,Cat,val
-C:/Users/hp/cat%dog prediction cnn/data/processed/Cat/Cat_4.jpg,0,Cat,val
-C:/Users/hp/cat%dog prediction cnn/data/processed/Cat/Cat_14.jpg,0,Cat,val
-C:/Users/hp/cat%dog prediction cnn/data/processed/Cat/Cat_15.jpg,0,Cat,val
-C:/Users/hp/cat%dog prediction cnn/data/processed/Dog/Dog_19.jpg,1,Dog,val
